@@ -7,4 +7,25 @@ def rounder(number: float) -> int:
 
     # TODO implement round function
 
-    return 0
+   # save the whole number part of the decimal and the decimal part in different variables 
+    newnum = number - int(number)
+    rounded = int(number)
+
+    # case for positive numbers
+    if number >= 0:
+        if newnum >= 0.5:
+            return rounded + 1
+        else:
+            return  rounded
+
+    # case for negatives
+    if number < 0:
+
+        if newnum <= -0.5:
+
+            return rounded - 1
+        else:
+            return rounded
+
+
+    # return 0

@@ -7,7 +7,10 @@ def staple_to_front(s: str, c: str) -> str:
 
     # TODO
 
-    return ''
+    # use concatenation to add 2 strings
+    newstr = c + s
+    return newstr
+    # return ''
 
 def staple_to_end(s: str, c: str) -> str:
     """
@@ -16,8 +19,11 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
+    #use concatenation to add 2 strings
 
-    return ''
+    newstr = s + c
+    return newstr
+    # return ''
 
 def shred_first_character(s: str) -> str:
     """
@@ -27,7 +33,10 @@ def shred_first_character(s: str) -> str:
 
     # TODO
 
-    return ''
+    # use len(x) to find the length, use x[index : index] to create substring
+    newstr = s[1 : len(s) - 1]
+    return newstr
+    # return ''
 
 def shred_last_character(s: str) -> str:
     """
@@ -37,4 +46,7 @@ def shred_last_character(s: str) -> str:
 
     # TODO
 
-    return ''
+    # same as shred first, but exclude the last character
+    newstr = s[0 : len(s) - 2]
+    return newstr
+    # return ''
