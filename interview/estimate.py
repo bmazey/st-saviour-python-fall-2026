@@ -10,17 +10,18 @@ def rounder(number: float) -> int:
    # save the whole number part of the decimal and the decimal part in different variables 
     newnum = number - int(number)
     rounded = int(number)
+    # or use % 1
 
     # case for positive numbers
     if number >= 0:
         if newnum >= 0.5:
             return rounded + 1
         else:
-            return  rounded
+            return rounded
 
     # case for negatives
-    if number < 0:
-
+    elif number < 0:
+            #elif = else if
         if newnum <= -0.5:
 
             return rounded - 1

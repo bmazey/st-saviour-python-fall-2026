@@ -34,7 +34,7 @@ def shred_first_character(s: str) -> str:
     # TODO
 
     # use len(x) to find the length, use x[index : index] to create substring
-    newstr = s[1 : len(s) - 1]
+    newstr = s[1 : len(s)]
     return newstr
     # return ''
 
@@ -47,6 +47,6 @@ def shred_last_character(s: str) -> str:
     # TODO
 
     # same as shred first, but exclude the last character
-    newstr = s[0 : len(s) - 2]
+    newstr = s[0 : len(s) - 1]
     return newstr
     # return ''

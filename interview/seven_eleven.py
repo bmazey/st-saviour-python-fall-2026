@@ -12,14 +12,13 @@ def seven_eleven(number: int) -> str:
 
     # checks if the number is divisible by 7 and/or 11
      
-    if number % 7 == 0:
+    if number % 7 == 0 and number % 11 == 0:
+            return "seveneleven"
+    elif number % 7 == 0:
         return "seven"
     
-    if number % 11 == 0:
+    elif number % 11 == 0:
         return "eleven"
-    
-    if number % 7 == 0 and number % 11 == 0:
-        return "seveneleven"
     
     else:
         return ''

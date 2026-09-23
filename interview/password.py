@@ -39,6 +39,7 @@ def generate_password() -> str:
     char = "!@#$%^&*"
     randchar = char[random.randint(0 , len(char) - 1)]
 
+    # use an f string to workaround the concatenation/addition operator problem (java could never)
     return f"{letters}{number}{randchar}"
 
 
