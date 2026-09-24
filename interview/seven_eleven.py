@@ -11,3 +11,14 @@ def seven_eleven(number: int) -> str:
     # TODO implement seven_eleven function
 
     return ''
+    if number % 7:
+        return('seven')
+
+    if number % 11:
+        return('eleven')    
+
+    if number % 7 and number % 11:
+        return('seveneleven')
+
+    
+
