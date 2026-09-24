@@ -9,3 +9,5 @@ if __name__ == '__main__':
 
    x = 5.8
    print(x % 1)
+
+   from interview.password import genarate_password
