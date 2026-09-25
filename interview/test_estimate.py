@@ -10,3 +10,4 @@ def test_rounder():
 
     assert rounder(7.6) == 8
     assert rounder(7.9) == 8
+    assert rounder(7.5) == 8
