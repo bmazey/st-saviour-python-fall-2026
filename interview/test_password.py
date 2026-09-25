@@ -15,7 +15,7 @@ def test_password_numberic_characters():
 
     # use regex to check if the characters from index 5 to 8 are numbers
     password1 = generate_password()[5 : 8]
-    pattern = r"[0 - 9]"
+    pattern = r"[0-9]"
     match = re.search(pattern, password1)
     assert match
 
