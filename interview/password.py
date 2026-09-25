@@ -30,7 +30,7 @@ def generate_password() -> str:
     # loop 4 times to get 4 random numbers, saved to variable "number"
     number = 0
     j = 1
-    while j <= 4 :  
+    while j <= 4:  
         number = number * 10 + random.randint(0 , 9)
         # every time it's multiiplied ny 10, a new digit at the end is made, and this digit = the random number
         j += 1
