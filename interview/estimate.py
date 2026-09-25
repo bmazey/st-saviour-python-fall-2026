@@ -8,5 +8,10 @@ def rounder(number: float) -> int:
     # TODO implement round function
     # use %
     
-    
-    return 0
+    dit = number - int(number)
+    rounded = int(number)
+
+    if dit >= 0.5:
+        return rounded + 1
+    else:
+        return rounded
