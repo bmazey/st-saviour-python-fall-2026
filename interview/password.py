@@ -41,6 +41,3 @@ def generate_password() -> str:
 
     # use an f string to workaround the concatenation/addition operator problem (java could never)
     return f"{letters}{number}{randchar}"
-
-
-    # return ''

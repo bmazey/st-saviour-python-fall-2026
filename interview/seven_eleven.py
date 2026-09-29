@@ -9,8 +9,7 @@ def seven_eleven(number: int) -> str:
     """
 
     # TODO implement seven_eleven function
-
-    # checks if the number is divisible by 7 and/or 11
+    # checks if the number is divisible by 7 and/or 11 using modulo
      
     if number % 7 == 0 and number % 11 == 0:
             return "seveneleven"
@@ -20,5 +19,3 @@ def seven_eleven(number: int) -> str:
         return "eleven"
     else:
         return ''
-
-    # return ''
