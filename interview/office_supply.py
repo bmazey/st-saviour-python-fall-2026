@@ -6,6 +6,10 @@ def staple_to_front(s: str, c: str) -> str:
     """
 
     # TODO
+     
+    yjk = c + s
+    return yjk
+    
 
     return ''
 
@@ -16,6 +20,8 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
+    kd = s + c
+    return kd
 
     return ''
 
@@ -26,6 +32,7 @@ def shred_first_character(s: str) -> str:
     """
 
     # TODO
+    
 
     return ''
 
