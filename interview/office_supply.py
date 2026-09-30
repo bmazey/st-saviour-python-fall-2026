@@ -24,7 +24,7 @@ def shred_first_character(s: str) -> str:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
 
-    shred = s[1:]
+    shred = s[1::1]
     return shred
 
 def shred_last_character(s: str) -> str:
@@ -33,5 +33,5 @@ def shred_last_character(s: str) -> str:
       - ex: shred_last_character('st. saviourr') -> 'st. saviour'
     """
 
-    shred = s[:-1]
+    shred = s[:-1:1]
     return shred
