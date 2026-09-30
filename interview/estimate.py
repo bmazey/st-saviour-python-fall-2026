@@ -7,11 +7,13 @@ def rounder(number: float) -> int:
 
     # TODO implement round function
 
-    num = number - int(number)
-    rounded = int(number)
+    """Get decimal value by subtracting the in of number from the original"""
 
+    num = number - int(number)
+
+    """Check if the decimal is greater than or equal o 0.5"""
     if num >= 0.5:
-        return rounded + 1
+        return int(number) + 1
     else:
-        return rounded  
+        return int(number)  
     
