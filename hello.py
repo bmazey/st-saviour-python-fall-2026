@@ -25,4 +25,4 @@ if __name__ == '__main__':
     #EX: from interview password import generate_password
     #then write: print(generate_password()) *indented
 
-    
+    #+= means adding on to the end of the string
