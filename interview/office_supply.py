@@ -5,9 +5,9 @@ def staple_to_front(s: str, c: str) -> str:
       - ex: staple_to_front('saviour', 'st. ') -> 'st. saviour'
     """
 
-    # TODO
+    result = c + s
 
-    return ''
+    return result 
 
 def staple_to_end(s: str, c: str) -> str:
     """
@@ -15,9 +15,9 @@ def staple_to_end(s: str, c: str) -> str:
       - ex: staple_to_front('st. ', 'saviour') -> 'st. saviour'
     """
 
-    # TODO
+    result = s + c
 
-    return ''
+    return result
 
 def shred_first_character(s: str) -> str:
     """
@@ -25,9 +25,9 @@ def shred_first_character(s: str) -> str:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
 
-    # TODO
+    result = s[1::]
 
-    return ''
+    return result
 
 def shred_last_character(s: str) -> str:
     """
@@ -35,6 +35,6 @@ def shred_last_character(s: str) -> str:
       - ex: shred_first_character('st. saviourr') -> 'st. saviour'
     """
 
-    # TODO
+    result = s[:len(s) - 1:]
 
-    return ''
+    return result
