@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     #print('the random character is: ' + c)"""
 
-    # l = ['abcdefghijklmnopqrstuvwxyz']
+    #l : str['abcdefghijklmnopqrstuvwxyz']
     #e = random.randint(0, 25)
 
     #d = '0123456789'
@@ -49,4 +49,4 @@ if __name__ == '__main__':
     #syb = '!@#$%&()?'
     #mol = random.randit(0, 8)
 
-    #print (str(e) + str(i) + str(mol))
+    #print(str(e) + str(i) + str(mol))
