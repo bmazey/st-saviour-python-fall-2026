@@ -16,4 +16,15 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
 
+    #l = 'abcdefghijklmnopqrstuvwxyz'
+    e = random.randint(0, 25)
+
+    d = '0123456789'
+    i = random.randit(0, 9)
+
+    syb = '!@#$%&()?'
+    mol = random.randit(0, 8)
+
+    print (str(e) + str(i) + str(mol))
+    
     return ''

@@ -2,7 +2,7 @@
 
 if __name__ == '__main__':
     # this is a comment
-    #print('new dawn, new day!')
+    print('new dawn, new day!')
 
     # homework = False
     # due_next_period = True
@@ -19,10 +19,34 @@ if __name__ == '__main__':
     # x = int(y)
     # print('x is ' + str(x) + ' the type of x is ' + str(type(x)))
 
-    x = 5.8
-    print(x % 1)
+    #x = 5.8
+    #print(x % 1)
 
     #EX: from interview password import generate_password
     #then write: print(generate_password()) *indented
 
     #+= means adding on to the end of the string
+    #import random
+
+    #def generate_password() -> str:
+
+    #s = 'october'
+
+    #r = random.randint(0, 6)
+
+    #print ('the number is: ' + str(r))
+    
+    #c = s[r]
+
+    #print('the random character is: ' + c)"""
+
+    # l = ['abcdefghijklmnopqrstuvwxyz']
+    #e = random.randint(0, 25)
+
+    #d = '0123456789'
+    #i = random.randit(0, 9)
+
+    #syb = '!@#$%&()?'
+    #mol = random.randit(0, 8)
+
+    #print (str(e) + str(i) + str(mol))
