@@ -11,3 +11,4 @@ def rounder(number: float) -> int:
         return int(number) + 1 
     else: 
         return int(number)
+# The program uses modulo operator to check the decimal portion fo the number
