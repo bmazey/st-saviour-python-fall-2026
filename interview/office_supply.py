@@ -5,10 +5,11 @@ def staple_to_front(s: str, c: str) -> str:
       - ex: staple_to_front('saviour', 'st. ') -> 'st. saviour'
     """
 
-    # TODO
+    # TODO 
+    result = c+s
+    return result 
 
-    return ''
-
+    
 def staple_to_end(s: str, c: str) -> str:
     """
     staple_to_end() accepts two strings s, c and returns a new string:
@@ -16,8 +17,10 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
+    result = s+c 
+    return result
 
-    return ''
+    
 
 def shred_first_character(s: str) -> str:
     """
@@ -26,8 +29,10 @@ def shred_first_character(s: str) -> str:
     """
 
     # TODO
+    result = s[1::]
+    return result
 
-    return ''
+    
 
 def shred_last_character(s: str) -> str:
     """
@@ -36,5 +41,5 @@ def shred_last_character(s: str) -> str:
     """
 
     # TODO
-
+    result = s[:len(s) - 1:]
     return ''

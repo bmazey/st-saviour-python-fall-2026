@@ -17,4 +17,4 @@ def seven_eleven(number: int) -> str:
         return 'eleven'
    
     else:
-        return ''
+        return 'seven'
