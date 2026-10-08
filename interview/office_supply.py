@@ -7,9 +7,8 @@ def staple_to_front(s: str, c: str) -> str:
 
     # TODO
      
-    yjk = c + s
-    return yjk
-    
+    y = c + s
+    return y
 
     return ''
 
@@ -20,8 +19,8 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
-    kd = s + c
-    return kd
+    k = s + c
+    return k
 
     return ''
 
@@ -30,9 +29,9 @@ def shred_first_character(s: str) -> str:
     shred_first_character() accepts a string s and returns a new string:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
-
-    # TODO
-    shred_first_character(print[1::])
+    s = str()
+    ww = (s[1::])
+    return ww
 
     return ''
 
@@ -42,7 +41,8 @@ def shred_last_character(s: str) -> str:
       - ex: shred_first_character('st. saviourr') -> 'st. saviour'
     """
 
-    # TODO
-    shred_last_character(print[::1])
+    s = str()
+    ll = (len(s)-1)
+    return ll
 
     return ''

@@ -26,24 +26,25 @@ if __name__ == '__main__':
     #then write: print(generate_password()) *indented
 
     #+= means adding on to the end of the string
-    #import random
+    import random
 
     #def generate_password() -> str:
 
-    #s = 'october'
+    s = 'october'
 
-    #r = random.randint(0, 6)
+    r = random.randint(0, 6)
 
-    #print ('the number is: ' + str(r))
+    print ('the number is: ' + str(r))
     
-    #c = s[r]
+    c = s[r]
 
     #print('the random character is: ' + c)"""
 
     #l : str['abcdefghijklmnopqrstuvwxyz']
     #e = random.randint(0, 25)
 
-    #d = '0123456789'
+    d = '0123456789'
+    print(d[::])
     #i = random.randit(0, 9)
 
     #syb = '!@#$%&()?'

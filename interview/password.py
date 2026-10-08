@@ -25,6 +25,7 @@ def generate_password() -> str:
     syb = '!@#$%&()?'
     mol = random.randit(0, 8)
 
-    print (str(e + i) + str(i + mol) + str(i + mol + e) + str(i + e) + str(mol))
+    ft = print(str(e + i) + str(i + mol) + str(i + mol + e) + str(i + e) + str(mol))
+    sd = print(str(e + e + e + e + e + i + i + i + i + mol))
     
     return ''
