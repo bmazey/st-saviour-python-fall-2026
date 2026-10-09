@@ -15,3 +15,4 @@ def test_shredder():
 
     assert shred_last_character('pandax') == 'panda'
     assert shred_last_character('saviourx') == 'saviour'
+
