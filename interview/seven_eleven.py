@@ -1,4 +1,4 @@
-git
+
 def seven_eleven(number: int) -> str:
     """
     seven_eleven() is a function which takes a number and returns:
