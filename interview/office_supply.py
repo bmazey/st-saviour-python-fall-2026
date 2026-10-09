@@ -6,8 +6,9 @@ def staple_to_front(s: str, c: str) -> str:
     """
 
     # TODO
-
-    return ''
+    """Adding two strings c and s together to return them combined in the correct order."""
+    x = c + s
+    return x
 
 def staple_to_end(s: str, c: str) -> str:
     """
@@ -16,8 +17,9 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
-
-    return ''
+    """Adding two strings s and c together to return them combined."""
+    y = s + c
+    return y
 
 def shred_first_character(s: str) -> str:
     """
@@ -26,8 +28,9 @@ def shred_first_character(s: str) -> str:
     """
 
     # TODO
-
-    return ''
+    """To remove the first letter from the string s, start the string at index number 1 and continue the rest of its length"""
+    z = s[1 : len(s)]
+    return z
 
 def shred_last_character(s: str) -> str:
     """
@@ -36,5 +39,6 @@ def shred_last_character(s: str) -> str:
     """
 
     # TODO
-
-    return ''
+    """To remove the last letter from the string s, start the string at index number 0 and minus one from its length to shred the last letter"""
+    a = s[0 : len(s) - 1]
+    return a
