@@ -30,24 +30,52 @@ if __name__ == '__main__':
 
     #def generate_password() -> str:
 
-    s = 'october'
+    #s = 'october'
 
-    r = random.randint(0, 6)
+    #r = random.randint(0, 6)
 
-    print ('the number is: ' + str(r))
+    #print ('the number is: ' + str(r))
     
-    c = s[r]
+    #c = s[r]
 
     #print('the random character is: ' + c)"""
 
     #l : str['abcdefghijklmnopqrstuvwxyz']
     #e = random.randint(0, 25)
 
-    d = '0123456789'
-    print(d[::])
+    #d = '0123456789'
+    #print(d[::])
     #i = random.randit(0, 9)
 
     #syb = '!@#$%&()?'
     #mol = random.randit(0, 8)
 
     #print(str(e) + str(i) + str(mol))
+    l = 'abcdefghijklmnopqrstuvwxyz'
+    e = random.randint(0, 25)
+    e2 = random.randint(0, 25)
+    e3 = random.randint(0, 25)
+    e4 = random.randint(0, 25)
+    e5 = random.randint(0, 25)
+    t = l[e]
+    v = l[e2]
+    w = l[e3]
+    x = l[e4]
+    y = l[e5]
+    
+    d = '0123456789'
+    i = random.randint(0, 9)
+    i2 = random.randint(0, 9)
+    i3 = random.randint(0, 9)
+    i4 = random.randint(0, 9)
+    g = d[i]
+    h = d[i2]
+    j = d[i3]
+    k = d[i4]
+    
+    syb = '!@#$%&()?'
+    mol = random.randint(0, 8)
+    r = syb[mol]
+    
+    fp = print(t + v + w + x + y + g + h + j + k + r)
+    sp = print(r + k + j + h + g + y + x + w + v + t)

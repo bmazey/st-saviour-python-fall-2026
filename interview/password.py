@@ -14,18 +14,39 @@ def generate_password() -> str:
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
 
-    # TODO implement generate_password function
-
+    # use random.randint to generate a random index number
+    # the random index number will be used to generate a random letter
     l = 'abcdefghijklmnopqrstuvwxyz'
     e = random.randint(0, 25)
+    e2 = random.randint(0, 25)
+    e3 = random.randint(0, 25)
+    e4 = random.randint(0, 25)
+    e5 = random.randint(0, 25)
+    t = l[e]
+    v = l[e2]
+    w = l[e3]
+    x = l[e4]
+    y = l[e5]
 
+    # use random.randint to generate a random index number
+    # the random index number will be used to generate a random number
     d = '0123456789'
-    i = random.randit(0, 9)
+    i = random.randint(0, 9)
+    i2 = random.randint(0, 9)
+    i3 = random.randint(0, 9)
+    i4 = random.randint(0, 9)
+    g = d[i]
+    h = d[i2]
+    j = d[i3]
+    k = d[i4]
 
+    # use random.randint to generate a random index number
+    # the random index number will be used to generate a random symbol
     syb = '!@#$%&()?'
-    mol = random.randit(0, 8)
+    mol = random.randint(0, 8)
+    r = syb[mol]
 
-    ft = print(str(e + i) + str(i + mol) + str(i + mol + e) + str(i + e) + str(mol))
-    sd = print(str(e + e + e + e + e + i + i + i + i + mol))
+    # this will generate the 10 character password
+    fp = print(t + v + w + x + y + g + h + j + k + r)
+    sp = print(r + k + j + h + g + y + x + w + v + t)
     
-    return ''
