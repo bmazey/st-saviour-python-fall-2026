@@ -29,7 +29,7 @@ def shred_first_character(s: str) -> str:
     """
 
     # TODO
-    result = s[1::]
+    result = s[1::1]
     return result
 
     
@@ -41,5 +41,5 @@ def shred_last_character(s: str) -> str:
     """
 
     # TODO
-    result = s[:len(s) - 1:]
-    return ''
+    shred = s[:-1:1]
+    return shred

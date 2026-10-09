@@ -11,10 +11,10 @@ def seven_eleven(number: int) -> str:
     # TODO imp 
     if number % 7 == 0 and number % 11 == 0:
         return 'seveneleven'
-    if number % 7 == 0:
+    elif number % 7 == 0:
         return 'seven'
     elif number % 11 == 0:
         return 'eleven'
    
     else:
-        return 'seven'
+        return ''
