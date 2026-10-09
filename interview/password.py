@@ -14,6 +14,17 @@ def generate_password() -> str:
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
 
-    # TODO implement generate_password function
+    password = ''
 
-    return ''
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+
+    for _ in range(5):
+        password += random.choice(letters)
+
+    for _ in range(4):
+        password += str(random.randint(0, 9))
+
+    symbols = '!@#$%^&*'
+    password += random.choice(symbols)
+
+    return password

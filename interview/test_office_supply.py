@@ -10,8 +10,8 @@ def test_stapler():
 
 def test_shredder():
     # verify shredder cases
-    assert shred_first_character('ppanda') == 'panda'
-    assert shred_first_character('ssaviour') == 'saviour'
+    assert shred_first_character('panda') == 'anda'
+    assert shred_first_character('saviour') == 'aviour'
 
-    assert shred_last_character('pandax') == 'panda'
-    assert shred_last_character('saviourx') == 'saviour'
+    assert shred_last_character('panda') == 'pand'
+    assert shred_last_character('saviour') == 'saviou'
