@@ -17,11 +17,16 @@ def generate_password() -> str:
     # TODO implement generate_password function
 
     lowercase = 'abcdefghijklmnopqrstuvwxyz'
-    for i in range(5):
-        generated_password += random.choice(lowercase)
 
-    for i in range:
-        generated_passowrd += str[random.randint(0,9)]
+    password = ''
+
+    for i in range(5):
+        password += random.choice(lowercase)
+
+    for i in range(4):
+        password += str(random.randint(0, 9))
 
     symbols = '!@#$%^&*'
-    generated_password += random.choice(symbols)
+    password += random.choice(symbols)
+
+    return password
