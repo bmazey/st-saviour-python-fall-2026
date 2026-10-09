@@ -16,6 +16,9 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
 
+    """First to get the 5 random letters create a variable with all of the letters of the alphabet.
+    Make strings to randomly choose an index number of the alphabet and add five of them to the final password."""
+    
     z = 'abcdefghijklmnopqrstuvwxyz'
     
     a = random.randint(0, 25)
@@ -30,6 +33,8 @@ def generate_password() -> str:
     i = z[d]
     j = z[e]
 
+    """Do the same thing instead with numbers and add four to the final password."""
+
     y = '0123456789'
 
     k = random.randint(0, 9)
@@ -42,11 +47,14 @@ def generate_password() -> str:
     q = y[m]
     r = y[n]
 
+    """One more time but with symbols and only add one"""
+
     s = '!@#$%^&*'
 
     t = random.randint(0, 7)
 
     u = s[t]
 
+    """Return the password with all of the letters in order with 5 letters, 4 numbers, and one symbol."""
 
     return f+g+h+i+j+o+p+q+r+u
