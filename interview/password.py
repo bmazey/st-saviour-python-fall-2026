@@ -25,7 +25,7 @@ def generate_password() -> str:
 
     # Geneterate next 4 characters (digits)
     for i in range(4):
-        genereated_password += str(random.randint(0,9))
+        generated_password += str(random.randint(0,9))
 
     # Generate final character (symbol)
     symbols = '!@#$%^&*'
