@@ -35,5 +35,5 @@ if __name__ == '__main__':
     u = s[t]
 
 
-    return f+g+h+i+j+o+p+q+r+u
+    print(f+g+h+i+j+o+p+q+r+u)
 
