@@ -29,8 +29,7 @@ def shred_first_character(s: str) -> str:
     shred_first_character() accepts a string s and returns a new string:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
-    s = str()
-    ww = (s[1::])
+    ww = s[1:len(s)]
     return ww
 
     return ''
@@ -41,8 +40,7 @@ def shred_last_character(s: str) -> str:
       - ex: shred_first_character('st. saviourr') -> 'st. saviour'
     """
 
-    s = str()
-    ll = (len(s)-1)
+    ll = s[0:(len(s)-1)]
     return ll
 
     return ''
