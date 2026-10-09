@@ -16,4 +16,20 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
 
-    return ''
+    generated_password = ''
+
+    # Generate first 5 characters (lowercase letters)
+    lowercase = 'abcdefghijklmnopqrstuvwxyz'
+    for i in range(5):
+        generated_password += random.choice(lowercase)
+
+    # Geneterate next 4 characters (digits)
+    for i in range(4):
+        generated_password += str(random.randint(0,9))
+
+    # Generate final character (symbol)
+    symbols = '!@#$%^&*'
+    generated_password += random.choice(symbols)
+
+    return generated_password
+
