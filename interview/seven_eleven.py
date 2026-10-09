@@ -8,11 +8,12 @@ def seven_eleven(number: int) -> str:
         - an empty string if the number is not a multiple of 7 or 11
     """
 
-    if number % 7 ==0 and number % 11 == 0:
+    if number % 7 == 0 and number % 11 == 0:
         return 'seveneleven'
     if number % 7 == 0:
-        if number % 11 == 0:
-            return 'eleven'
+        return "seven"
+    if number % 11 == 0:
+        return 'eleven'
     # TODO implement seven_eleven function
 
     return ''
