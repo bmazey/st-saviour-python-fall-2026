@@ -53,7 +53,7 @@ def test_password_alpha_characters():
 
 def test_password_numeric_characters():
  password = generate_password()
-   assert password[5].isdigit() and password[6].isdigit() and password[7].isdigit() and password[8].isdigit()
+assert password[5].isdigit() and password[6].isdigit() and password[7].isdigit() and password[8].isdigit()
    # Next 4 characters should be digits
 
 

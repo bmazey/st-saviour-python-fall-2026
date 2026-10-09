@@ -21,7 +21,7 @@ def generate_password() -> str:
         generated_password += random.choice(lowercase)
 
     for i in range:
-        generated_passowrd += str.(random.randint(0,9))
+        generated_passowrd += str[random.randint(0,9)]
 
     symbols = '!@#$%^&*'
     generated_password += random.choice(symbols)
