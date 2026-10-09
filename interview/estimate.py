@@ -7,4 +7,7 @@ def rounder(number: float) -> int:
 
     # TODO implement round function
 
-    return 0
+    if number % 1 >= 0.5:
+        return int(number) + 1
+    return int(number)
+# The rogram uses modulo operator to check the decimal portion of the number.
