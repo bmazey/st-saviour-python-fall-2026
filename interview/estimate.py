@@ -1,17 +1,7 @@
-
-def rounder(number: float) -> int:
-    """
-    round accepts a float and returns a rounded integer.
-    the number is rounded up iff the decimal is >= .5
-    """
-
-    # TODO implement round function
-
-    return 0
-
+import random
 def rounder(number: float) -> int:
    """
-   round accepts a float and returns a rounded integer.
+   round accepts a float and returns a rounded integer.defw
    the number is rounded up iff the decimal is >= .5
    """
 
@@ -23,5 +13,4 @@ def rounder(number: float) -> int:
        return int(number) + 1
    return int(number)
 # The rogram uses modulo operator to check the decimal portion of the number.
-
 
