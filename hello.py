@@ -1,11 +1,15 @@
-
+import random
 
 if __name__ == '__main__':
 
-    # print('string demo!')
+    s = 'abcdefghijklmnopqrstuvwxyz'
 
-    pattern = 'xoxoxoxoxoxo'
-    print(pattern[1::2])
+    r = random.randint(0, len(s) - 1)
 
-    # print(pattern[0:len(pattern):1])
+    print('the random number r is: ' + str(r))
+
+    c = s[r]
+
+    print('the random character is: ' + c)
+
     
