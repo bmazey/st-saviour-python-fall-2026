@@ -51,7 +51,7 @@ if __name__ == '__main__':
     #mol = random.randit(0, 8)
 
     #print(str(e) + str(i) + str(mol))
-    l = 'abcdefghijklmnopqrstuvwxyz'
+    """l = 'abcdefghijklmnopqrstuvwxyz'
     e = random.randint(0, 25)
     e2 = random.randint(0, 25)
     e3 = random.randint(0, 25)
@@ -78,4 +78,16 @@ if __name__ == '__main__':
     r = syb[mol]
     
     fp = print(t + v + w + x + y + g + h + j + k + r)
-    sp = print(r + k + j + h + g + y + x + w + v + t)
+    sp = print(r + k + j + h + g + y + x + w + v + t)"""
+
+    print('new dawn, new day')
+    s = 'October'
+    i = 0
+    while i < len(s):
+        print(s[i])
+        i += 1
+        
+    i = len(s)-1
+    while i >= 0:
+        print(s[i])
+        i -= 1
