@@ -2,14 +2,10 @@ import random
 
 if __name__ == '__main__':
 
-    s = 'abcdefghijklmnopqrstuvwxyz'
+    print('new dawn, new day')
 
-    r = random.randint(0, len(s) - 1)
-
-    print('the random number r is: ' + str(r))
-
-    c = s[r]
-
-    print('the random character is: ' + c)
-
-    
+    s = 'October'
+    i = len(s) - 1
+    while i >= 0:
+        print(s[i])
+        i -= 1
