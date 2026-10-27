@@ -7,7 +7,8 @@ def summation(numbers: list[int]) -> int:
     """
 
     # TODO
-
+    for number in numbers:
+        print (number)
     return 0
 
 def find_negative(numbers: list[int]) -> int:
