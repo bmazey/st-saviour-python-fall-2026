@@ -43,3 +43,4 @@ def shred_last_character(s: str) -> str:
     # TODO
     shred = s[:-1:1]
     return shred
+   
