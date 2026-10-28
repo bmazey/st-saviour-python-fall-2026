@@ -7,8 +7,12 @@ def summation(numbers: list[int]) -> int:
     """
 
     # TODO
-
-    return 0
+    sum = 0
+    i = 0
+    while i < len(list):
+        sum += list[i]
+        i+= 1
+    return sum
 
 def find_negative(numbers: list[int]) -> int:
     """
