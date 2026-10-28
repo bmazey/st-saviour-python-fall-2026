@@ -7,8 +7,11 @@ def summation(numbers: list[int]) -> int:
     """
 
     # TODO
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
 
-    return 0
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -64,6 +67,11 @@ def evens_only(numbers: list[int]) -> list[int]:
 
     # TODO
 
+
+
+
+    return result
+
     return []
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
@@ -74,8 +82,12 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
 
     # TODO
+    result = []
 
-    return []
+    for number in numbers:
+        result.append(number % 10)
+
+    return result
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
@@ -87,4 +99,4 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 
     # TODO +5 Bonus
 
-    return []
+    return [] 
