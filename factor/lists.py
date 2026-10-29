@@ -73,9 +73,12 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    # TODO
+    result = []
 
-    return []
+    for number in numbers:
+        result.append(number % 10)
+
+    return result
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
