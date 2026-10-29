@@ -25,7 +25,6 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # TODO
     numbers = [8, 9, 1, -2, 0]
     for number in numbers:
         if number < 0:

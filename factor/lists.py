@@ -6,10 +6,11 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # TODO
+    # comment
+    sum = 0
     for number in numbers:
-        print (number)
-    return 0
+        sum += number
+    return sum
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -19,9 +20,11 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # TODO
-
-    return 0
+    # comment
+    numbers = [8, 9, 1, -2, 0]
+    for number in numbers:
+        if number < 0:
+            print (number)
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -63,9 +66,16 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
-    # TODO
+    # comment
+    for number in numbers:
+        if number % 2 == 0:
+            number == even
+            print even 
 
-    return []
+        else:
+            continue
+    
+
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -74,9 +84,13 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    # TODO
+    #
+    result = []
 
-    return []
+    for number in numbers:
+        result.append(number % 10)
+
+    return result
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
