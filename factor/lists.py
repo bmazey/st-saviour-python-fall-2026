@@ -66,13 +66,11 @@ def evens_only(numbers: list[int]) -> list[int]:
     """
 
     # TODO
+    for number in numbers:
+        if number % 2 != 0:
+            numbers.remove(number)
+    return numbers
 
-
-
-
-    return result
-
-    return []
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
