@@ -8,10 +8,10 @@ def summation(numbers: list[int]) -> int:
 
     # TODO
     sum = 0
-    i = 0
-    while i < len(list):
-        sum += list[i]
-        i+= 1
+    # save the sum in a separate variable
+    for number in numbers:
+        sum += number
+    # use enhanced for loop to go over the list, and add each number to sum
     return sum
 
 def find_negative(numbers: list[int]) -> int:
@@ -23,7 +23,11 @@ def find_negative(numbers: list[int]) -> int:
     """
 
     # TODO
-
+    i = 0
+    while i < len(numbers):
+        if(numbers[i] < 0):
+            return i
+        i += 1
     return 0
 
 def find_greatest(numbers: list[int]) -> int:
@@ -34,8 +38,13 @@ def find_greatest(numbers: list[int]) -> int:
     """
 
     # TODO
-
-    return 0
+    greatest = 0
+    i = 0
+    while i < len(numbers):
+        if(numbers[i] > greatest):
+            greatest = numbers[i]
+        i += 1
+    return greatest
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -45,8 +54,13 @@ def remove(numbers: list[int], n: int) -> list[int]:
     """
 
     # TODO
-
-    return []
+    # for number in numbers:
+    #     if(number == n):
+    #        numbers.remove(number)
+    while numbers.count(n) >= 1:
+        numbers.remove(n)
+        
+    return numbers
 
 def round_up(floats: list[float]) -> list[int]:
     """
@@ -57,7 +71,7 @@ def round_up(floats: list[float]) -> list[int]:
 
     # TODO
 
-    return []
+    return [int(x) if x % 1 < 0.5 else int(x) + 1 for x in floats]
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
@@ -68,7 +82,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 
     # TODO
 
-    return []
+    return [x for x in numbers if x % 2 == 0]
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -79,7 +93,7 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
 
     # TODO
 
-    return []
+    return [x % 10 for x in numbers]
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
@@ -91,4 +105,6 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 
     # TODO +5 Bonus
 
-    return []
+    first.append(second)
+    
+    return first.sort()
