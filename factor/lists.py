@@ -42,7 +42,7 @@ def find_greatest(numbers: list[int]) -> int:
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
-            greatest = numbers[1]
+            greatest = numbers[i]
         i += 1
     return greatest
 
