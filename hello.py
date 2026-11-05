@@ -11,3 +11,7 @@ for number in numbers:
     if number % 2 != 0:
         number.remove
 
+    sum = 0
+    for number in numbers:
+        sum += number
+    return sum
