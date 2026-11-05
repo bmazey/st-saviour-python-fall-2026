@@ -7,11 +7,12 @@ def summation(numbers: list[int]) -> int:
     """
 
     # TODO
-    sum = 0
+
     # save the sum in a separate variable
+    sum = 0
+    # use enhanced for loop to go over the list, and add each number to sum
     for number in numbers:
         sum += number
-    # use enhanced for loop to go over the list, and add each number to sum
     return sum
 
 def find_negative(numbers: list[int]) -> int:
@@ -23,6 +24,8 @@ def find_negative(numbers: list[int]) -> int:
     """
 
     # TODO
+
+    # use a while loop to check if the number we're currently on is negative
     i = 0
     while i < len(numbers):
         if(numbers[i] < 0):
@@ -38,7 +41,11 @@ def find_greatest(numbers: list[int]) -> int:
     """
 
     # TODO
+
+    # save the current greatest number here
     greatest = 0
+
+    # check if the number we're currently on is greater than the current greatest number
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
@@ -54,12 +61,11 @@ def remove(numbers: list[int], n: int) -> list[int]:
     """
 
     # TODO
-    # for number in numbers:
-    #     if(number == n):
-    #        numbers.remove(number)
+
+    # loop over the list an undetermined amount of times, removing any instances of n until there is no more n in the list
     while numbers.count(n) >= 1:
         numbers.remove(n)
-        
+
     return numbers
 
 def round_up(floats: list[float]) -> list[int]:
@@ -71,6 +77,8 @@ def round_up(floats: list[float]) -> list[int]:
 
     # TODO
 
+    # loop over the list, check if the decimal component is greater or less than than 0.5
+    # returns the whole number component if less than, returns the whole number component + 1 if greater than
     return [int(x) if x % 1 < 0.5 else int(x) + 1 for x in floats]
 
 def evens_only(numbers: list[int]) -> list[int]:
@@ -82,6 +90,7 @@ def evens_only(numbers: list[int]) -> list[int]:
 
     # TODO
 
+    # pro gamer technique: use a list comprehension to loop over the list, check if they're even, and return those numbers
     return [x for x in numbers if x % 2 == 0]
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
@@ -93,6 +102,7 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
 
     # TODO
 
+    # pro gamer technique: use a list comprehension to loop over the list and keep only the last digit from each element
     return [x % 10 for x in numbers]
 
 def merge(first: list[int], second: list[int]) -> list[int]:
@@ -105,6 +115,6 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 
     # TODO +5 Bonus
 
+    # add the second list to the first, then sort the list
     first.append(second)
-    
     return first.sort()
