@@ -21,10 +21,12 @@ def find_negative(numbers: list[int]) -> int:
     """
 
     # comment
-    numbers = [8, 9, 1, -2, 0]
-    for number in numbers:
-        if number < 0:
-            print (number)
+    i = 0
+    while i < len(numbers):
+        if(numbers[i] < 0):
+            return i
+        i += 1
+    return 0
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -33,9 +35,14 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
-    # TODO
-
-    return 0
+    # comment
+    greatest = 0
+    i = 0
+    while i < len(numbers):
+        if(numbers[i] > greatest):
+            greatest = numbers[i]
+        i += 1
+    return greatest
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -44,9 +51,12 @@ def remove(numbers: list[int], n: int) -> list[int]:
         ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
     """
 
-    # TODO
+    # comment
+    while numbers.count(n) >= 1:
+        numbers.remove(n)
 
-    return []
+    return numbers
+
 
 def round_up(floats: list[float]) -> list[int]:
     """
@@ -55,9 +65,15 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
-    # TODO
-
-    return []
+    # comment
+    i = 0
+    while i < len(floats):
+        if floats[i] % 1 >= 0.5:
+            floats[i] = int(floats [i]) + 1
+        else:
+            floats[i] = int(floats [i])
+        i += 1
+    return floats
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
@@ -67,15 +83,8 @@ def evens_only(numbers: list[int]) -> list[int]:
     """
 
     # comment
-    for number in numbers:
-        if number % 2 == 0:
-            number == even
-            print even 
-
-        else:
-            continue
+    return [x for x in numbers if x % 2 == 0]
     
-
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -84,7 +93,7 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    #
+    #comment
     result = []
 
     for number in numbers:
@@ -101,5 +110,6 @@ def merge(first: list[int], second: list[int]) -> list[int]:
     """
 
     # TODO +5 Bonus
-
-    return []
+    # comment
+    first.append(second)
+    return first.sort()

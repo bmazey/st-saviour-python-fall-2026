@@ -31,3 +31,11 @@ def find_negative(numbers: list[int]) -> int:
             print (number)
 
     return 0
+
+
+"""evens = []
+    for number in numbers:
+        if number % 2 == 0:
+            number == evens
+            evens.append(number)
+        return evens"""
