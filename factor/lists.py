@@ -6,7 +6,7 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # comment
+    # sum starts at 0 then as it loops it keeps adding the numbers in the list until it adds all
     sum = 0
     for number in numbers:
         sum += number
@@ -20,13 +20,12 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # comment
+    # goes through list position by position until number is < 0 returns position of number
     i = 0
     while i < len(numbers):
         if(numbers[i] < 0):
             return i
         i += 1
-    return 0
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -35,8 +34,7 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
-    # comment
-    greatest = 0
+    # goes through list accepts number as greatest until a greater one is found returns greatest number
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
@@ -51,10 +49,9 @@ def remove(numbers: list[int], n: int) -> list[int]:
         ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
     """
 
-    # comment
+    # counts the amount of n in list then takes away all instances of n until it is gone then returns list without n
     while numbers.count(n) >= 1:
         numbers.remove(n)
-
     return numbers
 
 
@@ -65,7 +62,7 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
-    # comment
+    # goes through list uses % to remove ones if >= 0.5 adds 1 to int of float if < 0.5 returns int of float
     i = 0
     while i < len(floats):
         if floats[i] % 1 >= 0.5:
@@ -82,7 +79,7 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
-    # comment
+    # manipulates integers in list by using modulo to only return evens
     return [x for x in numbers if x % 2 == 0]
     
 
@@ -93,12 +90,10 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    #comment
+    # for every loop uses modulo to remove tens from number to get last digit adds it to the empty list
     result = []
-
     for number in numbers:
         result.append(number % 10)
-
     return result
 
 def merge(first: list[int], second: list[int]) -> list[int]:
@@ -110,6 +105,6 @@ def merge(first: list[int], second: list[int]) -> list[int]:
     """
 
     # TODO +5 Bonus
-    # comment
+    # takes second list and adds it to first then returns sorted merged list
     first.append(second)
     return first.sort()
