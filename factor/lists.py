@@ -35,6 +35,7 @@ def find_greatest(numbers: list[int]) -> int:
     """
 
     # goes through list accepts number as greatest until a greater one is found returns greatest number
+    greatest = 0
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
