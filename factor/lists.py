@@ -30,7 +30,6 @@ def find_negative(numbers: list[int]) -> int:
         if(numbers[i] < 0):
             return i
         i += 1
-    return 0
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -41,7 +40,7 @@ def find_greatest(numbers: list[int]) -> int:
 
     # TODO
     # the loop is going through each number and if the current number is greater the previous one, the greater one is returned
-    greatest = numbers[0]
+    greatest = 0
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
