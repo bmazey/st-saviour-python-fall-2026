@@ -10,7 +10,7 @@ def summation(numbers: list[int]) -> int:
     # taking the sum and adding it to each number in numbers with +=
     
     sum = 0
-    for number in list[int]:
+    for number in numbers:
         sum += number
     return sum
 
@@ -41,7 +41,7 @@ def find_greatest(numbers: list[int]) -> int:
 
     # TODO
     # the loop is going through each number and if the current number is greater the previous one, the greater one is returned
-    greatest = 0
+    greatest = numbers[0]
     i = 0
     while i < len(numbers):
         if(numbers[i] > greatest):
@@ -60,7 +60,6 @@ def remove(numbers: list[int], n: int) -> list[int]:
     # when the number is n, it removes every n from the list
     while numbers.count(n) >= 1:
         numbers.remove(n)
-
     return numbers
 
 def round_up(floats: list[float]) -> list[int]:
