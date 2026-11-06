@@ -10,7 +10,7 @@ def summation(numbers: list[int]) -> int:
     # taking the sum and adding it to each number in numbers with +=
     
     sum = 0
-    for number in numbers:
+    for number in list[int]:
         sum += number
     return sum
 
