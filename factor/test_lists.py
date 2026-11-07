@@ -87,7 +87,61 @@ def test_last_of_four_digits():
     assert len(result) == 4
 
 def test_merge():
-    # TODO +5 Bonus!
-    # create two lists and use lists.merge()
-    # assert proper order, content, & length of resulting list
-    pass
+    # Both input lists must be pre-sorted for lists.merge to work correctly.
+    first = [0, 2, 4, 8]
+    second = [1, 3, 5]
+    result = lists.merge(first, second)
+
+    assert result[0] == 0
+    assert result[1] == 1
+    assert result[2] == 2
+    assert result[3] == 3
+    assert result[4] == 4
+    assert result[5] == 5
+    assert result[6] == 8
+    assert len(result) == 7
+
+    # Test merging with empty lists
+    empty = []
+    result = lists.merge(first, empty)
+    assert result == first
+    assert len(result) == len(first)
+
+    result = lists.merge(empty, second)
+    assert result == second
+    assert len(result) == len(second)
+
+    # Test merging two empty lists
+    result = lists.merge(empty, empty)
+    assert result == empty
+    assert len(result) == 0
+
+    # Test merging lists with duplicate elements
+    first = [1, 2, 2, 3]
+    second = [2, 3, 4]
+    result = lists.merge(first, second)
+
+    assert result[0] == 1
+    assert result[1] == 2
+    assert result[2] == 2
+    assert result[3] == 2
+    assert result[4] == 3
+    assert result[5] == 3
+    assert result[6] == 4
+    assert len(result) == 7
+
+   # one last general test case, im so sorry this is so long i didn't know how much you wanted and i also just got bored
+    first = [1, 3, 5, 7]
+    second = [2, 4, 6, 8]
+    result = lists.merge(first, second)
+
+    assert result[0] == 1
+    assert result[1] == 2
+    assert result[2] == 3
+    assert result[3] == 4
+    assert result[4] == 5
+    assert result[5] == 6
+    assert result[6] == 7
+    assert result[7] == 8
+    assert len(result) == 8
+   

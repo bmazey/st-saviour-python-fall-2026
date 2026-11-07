@@ -6,12 +6,13 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
+    # setting sum to 0 to start the summation
     sum = 0
 
+    # this loop takes each number in the list and adds it to the sum variable, which starts at 0. after the loop completes, the function returns the total sum of the numbers in the list.
     for number in numbers:
         sum += number
-    # this loop takes each number in the list and adds it to the sum variable, which starts at 0. after the loop completes, the function returns the total sum of the numbers in the list.
-
+    
     return sum
 
 def find_negative(numbers: list[int]) -> int:
@@ -23,12 +24,13 @@ def find_negative(numbers: list[int]) -> int:
     """
 
     i = 0
+    
+    # this loop iterates through the list of numbers and checks each number to see if it is negative. if a negative number is found, the function returns its position in the list. if no negative number is found after checking all the numbers, the function returns -1 to indicate that no negative number was found.i = 0
     while i < len(numbers):
         if numbers[i] < 0:
             return i
         i += 1
-    # this loop iterates through the list of numbers and checks each number to see if it is negative. if a negative number is found, the function returns its position in the list. if no negative number is found after checking all the numbers, the function returns -1 to indicate that no negative number was found.
-
+    
     return -1
 
 def find_greatest(numbers: list[int]) -> int:
@@ -38,12 +40,12 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
+    # this loop checks a list of numbers to find which one is the greatest, then returns that number.
     greatest = numbers[0]
     for number in numbers:
         if number > greatest:
             greatest = number
-    # this loop checks a list of numbers to find which one is the greatest, then returns that number.
-
+   
     return greatest
 
 def remove(numbers: list[int], n: int) -> list[int]:
@@ -53,12 +55,12 @@ def remove(numbers: list[int], n: int) -> list[int]:
         ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
     """
 
+    # this loop goes through the list of numbers and checks each number to see if it is equal to n. if a number is not equal to n, it is added to the banished list. after checking all the numbers, the function returns the new list banished, which contains all the numbers from the original list except for those who are BANISHED.
     banished = []
     for number in numbers:
         if number != n:
             banished.append(number)
-    # this loop goes through the list of numbers and checks each number to see if it is equal to n. if a number is not equal to n, it is added to the banished list. after checking all the numbers, the function returns the new list banished, which contains all the numbers from the original list except for those who are banished.
-
+    
     return banished
 
 def round_up(floats: list[float]) -> list[int]:
@@ -68,13 +70,13 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
+     # this loop checks a list of floats for their decimal value. it then returns the next integer if it is 0.5 or greater and the integer outside of the decimal if it is 0.4 or less.
     rounded = []
     for f in floats:
         if f - int(f) >= 0.5:
             rounded.append(int(f) + 1)
         else:
             rounded.append(int(f))
-    # this loop checks a list of floats for their decimal value. it then returns the next integer if it is 0.5 or greater and the integer outside of the decimal if it is 0.4 or less.
 
     return rounded
 
@@ -85,12 +87,12 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
+    # this loop checks a list of numbers to see if each number is even by using modulo. it puts the even numbers in a list and skips the odd numbers.
     evens = []
     for number in numbers:
         if number % 2 == 0:
             evens.append(number)
-    # this loop checks a list to see if all the numbers are even by using modulo. it puts these nubers in a list and skips a number if it is odd
-
+    
     return evens
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
@@ -100,10 +102,11 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
+    # this loop checks a list to find the last digit of each 4 digit number by using modulo and returns that value
     last = []
     for number in numbers:
         last.append(number % 10)
-    # this loop checks a list to find the last digit of each 4 digit number by using modulo and returns that value
+    
     return last
 
 def merge(first: list[int], second: list[int]) -> list[int]:
@@ -113,9 +116,9 @@ def merge(first: list[int], second: list[int]) -> list[int]:
     You may only use the built-in list.sort() function to assist.
         ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
     """
-
+    
+    # this function checks every number's value in a list and returns them all as a new list
     merge = first + second
     merge.sort()
-    # this function checks every number's value in a list and returns them all as a new list
-
+    
     return merge
