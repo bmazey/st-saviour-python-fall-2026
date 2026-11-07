@@ -122,4 +122,4 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 
     # TODO +5 Bonus
 
-    return []
+    return 
